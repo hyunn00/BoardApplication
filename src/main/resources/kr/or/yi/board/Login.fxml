@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@loginDesign.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.yi.board.Controller.LoginController">
+   <children>
+      <AnchorPane fx:id="rootPane" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane prefHeight="600.0" prefWidth="450.0" styleClass="left-form" stylesheets="@loginDesign.css">
+               <children>
+                  <Label layoutX="125.0" layoutY="196.0" styleClass="left-form-font" stylesheets="@loginDesign.css" text="Login Page">
+                     <font>
+                        <Font name="Karumbi Regular" size="70.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="450.0" prefHeight="600.0" prefWidth="450.0" stylesheets="@loginDesign.css">
+               <children>
+                  <Label layoutX="100.0" layoutY="226.0" text="ID :">
+                     <font>
+                        <Font name="Karumbi Regular" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="96.0" layoutY="271.0" text="PW :">
+                     <font>
+                        <Font name="Karumbi Regular" size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfId" layoutX="160.0" layoutY="236.0" prefHeight="25.0" prefWidth="195.0" styleClass="textfield" stylesheets="@loginDesign.css">
+                     <font>
+                        <Font name="Karumbi Regular" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tfPw" layoutX="160.0" layoutY="281.0" prefHeight="25.0" prefWidth="195.0" styleClass="textfield" stylesheets="@loginDesign.css">
+                     <font>
+                        <Font name="Karumbi Regular" size="13.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="160.0" layoutY="330.0" mnemonicParsing="false" onAction="#login" prefHeight="44.0" prefWidth="195.0" styleClass="login-btn" stylesheets="@loginDesign.css" text="Button">
+                     <font>
+                        <Font name="Karumbi Regular" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="400.0" mnemonicParsing="false" onAction="#close" prefHeight="50.0" prefWidth="50.0" styleClass="close" stylesheets="@loginDesign.css">
+                     <graphic>
+                        <FontAwesomeIcon glyphName="CLOSE" size="1.5em" />
+                     </graphic></Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

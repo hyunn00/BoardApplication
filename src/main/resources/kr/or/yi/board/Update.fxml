@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="900.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.yi.board.Controller.UpdateController">
+   <children>
+      <Label layoutX="53.0" layoutY="29.0" prefHeight="51.0" prefWidth="795.0" styleClass="title-label" stylesheets="@application.css" text="게시글 수정">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="70.0" layoutY="501.0" mnemonicParsing="false" onAction="#moveToMain" styleClass="round-button" stylesheets="@application.css" text="목록보기">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="633.0" layoutY="501.0" mnemonicParsing="false" onAction="#backToRead" styleClass="round-button" stylesheets="@application.css" text="취소">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="730.0" layoutY="501.0" mnemonicParsing="false" onAction="#update" styleClass="round-button" stylesheets="@application.css" text="글수정">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="509.0" layoutY="410.0" mnemonicParsing="false" onAction="#fileUpload" stylesheets="@application.css" text="파일선택">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="88.0" layoutY="417.0" stylesheets="@application.css" text="파일 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfFilePath" layoutX="218.0" layoutY="413.0" prefHeight="32.0" prefWidth="264.0" promptText="제목을 입력하시오.">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="taContent" layoutX="218.0" layoutY="222.0" prefHeight="177.0" prefWidth="395.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <TextField fx:id="tfWriter" layoutX="218.0" layoutY="176.0" prefHeight="25.0" prefWidth="615.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tfTitle" layoutX="218.0" layoutY="133.0" prefHeight="25.0" prefWidth="615.0" promptText="제목을 입력하시오.">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="88.0" layoutY="222.0" text="내용 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="180.0" text="작성자 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="137.0" stylesheets="@application.css" text="제목 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="633.0" layoutY="222.0" prefHeight="224.0" prefWidth="200.0" styleClass="imageView-border">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="226.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true" styleClass="imageView-borde" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
